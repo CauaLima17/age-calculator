@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    color: hsl(0, 0%, 8%);
+    font-size: 6rem;
+    line-height: calc(6rem * 1.2);
+    font-weight: 800;
+    font-style: italic;
+}
+
+p {
+    margin-top: 4px;
+    color: hsl(0, 100%, 67%);
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    font-size: 2rem;
+    max-width: 180px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+.age-calculator-container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px 12px 128px 12px;
+}
+
+.calculator__inputs-area {
+    position: relative;
+    padding-bottom: 40px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    display: flex;
+    gap: 20px;
+}
+
+.calculator__button {
+    position: absolute;
+    bottom: -46px;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(259, 100%, 65%);
+    padding: 24px;
+    transition: 0.3s;
+}
+
+.calculator__button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.calculator__result__area {
+    padding-top: 40px;
+}
+
+@media (width < 1000px){
+    input {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: calc(4rem * 1.2);
+    }
+
+    .calculator__inputs-area {
+        padding-bottom: 60px;
+    }
+
+    .calculator__button {
+        right: 50%;
+        transform: translateX(50%);
+        padding: 16px;
+    }
+
+    .calculator__result__area {
+        padding-top: 60px;
+    }
+}
+
+@media (width < 700px) {
+    input {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        line-height: calc(3rem * 1.2);
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+}
